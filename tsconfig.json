@@ -10,5 +10,5 @@
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "Node"
   },
-  "include": ["./**/*.ts"]
+  "include": ["./src/*.ts"]
 }

@@ -5,9 +5,9 @@ import { suite } from 'uvu'
 
 function createServer() {
   const _detector = botDetector()
-  return http.createServer((req: RequestWithBotDetector, res) => {
-    _detector(req, res, () => {
-      const { isBot, botName } = req
+  return http.createServer((req, res) => {
+    _detector(req as RequestWithBotDetector, res, () => {
+      const { isBot, botName } = req as RequestWithBotDetector
       res.end(JSON.stringify({ isBot, botName }))
     })
   })

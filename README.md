@@ -24,9 +24,9 @@ pnpm i @tinyhttp/bot-detector
 import { createServer } from 'http'
 import { botDetector, RequestWithBotDetector } from '@tinyhttp/bot-detector'
 
-createServer((req: RequestWithBotDetector, res) => {
-  botDetector(req, res, () => {
-    res.send(req.isBot ? `Bot detected 🤖: ${req.botName}` : 'Hello World!')
+createServer((req, res) => {
+  botDetector(req as RequestWithBotDetector, res, () => {
+    res.send((req as RequestWithBotDetector).isBot ? `Bot detected 🤖: ${req.botName}` : 'Hello World!')
   })
 }).listen(3000)
 ```
