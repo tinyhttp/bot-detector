@@ -9,5 +9,6 @@
     "preserveSymlinks": true,
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "Node"
-  }
+  },
+  "include": ["./**/*.ts"]
 }
