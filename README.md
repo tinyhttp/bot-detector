@@ -47,5 +47,5 @@ new App<any, RequestWithBotDetector>()
 
 [npm-badge]: https://img.shields.io/npm/v/@tinyhttp/bot-detector?style=for-the-badge&color=hotpink&logo=npm&label=
 [dl-badge]: https://img.shields.io/npm/dt/@tinyhttp/bot-detector?style=for-the-badge&color=hotpink
-[github-actions]: https://github.com/tinyhttp/cli/actions
-[codacy-url]: https://www.codacy.com/manual/tinyhttp/cli
+[github-actions]: https://github.com/tinyhttp/bot-detector/actions
+[codacy-url]: https://www.codacy.com/manual/tinyhttp/bot-detector
