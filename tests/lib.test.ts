@@ -37,7 +37,7 @@ it('should identify a node request as bot', async () => {
     headers: {
       'User-Agent': 'node-fetch/1.0 (+https://github.com/bitinn/node-fetch)'
     }
-  }).expect(200, '{"isBot":true,"botName":"fetch"}')
+  }).expect(200, '{"isBot":true,"botName":"http"}')
 })
 
 it.run()

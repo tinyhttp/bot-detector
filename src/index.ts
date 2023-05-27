@@ -20,7 +20,6 @@ export function botDetector() {
       isBot: {
         get: () => {
           if (typeof bot === 'boolean') return bot
-
           return (bot = detectBot(agent))
         }
       },
