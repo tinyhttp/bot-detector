@@ -1,9 +1,13 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   isbot:
-    specifier: ^3.6.10
-    version: 3.6.10
+    specifier: ^4.1.1
+    version: 4.1.1
 
 devDependencies:
   '@rollup/plugin-typescript':
@@ -1206,9 +1210,9 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /isbot@3.6.10:
-    resolution: {integrity: sha512-+I+2998oyP4oW9+OTQD8TS1r9P6wv10yejukj+Ksj3+UR5pUhsZN3f8W7ysq0p1qxpOVNbl5mCuv0bCaF8y5iQ==}
-    engines: {node: '>=12'}
+  /isbot@4.1.1:
+    resolution: {integrity: sha512-kN+jdL5T+4kMfENZzLwv81KFymnpuv49rUQpp6jwHQhqMG++f1XPvNBgFRO9N0uaBqqft1d+Vn1Jls/TDhJpDw==}
+    engines: {node: '>=18'}
     dev: false
 
   /isexe@2.0.0:
