@@ -1,5 +1,5 @@
 import { IncomingMessage as Request } from 'http'
-import detectBot from 'isbot'
+import { isbot, isbotMatch } from 'isbot'
 
 export interface RequestWithBotDetector extends Request {
   isBot: boolean
@@ -20,13 +20,13 @@ export function botDetector() {
       isBot: {
         get: () => {
           if (typeof bot === 'boolean') return bot
-          return (bot = detectBot(agent))
+          return (bot = isbot(agent))
         }
       },
       botName: {
         get: () => {
           if (!req.isBot) name = null
-          if (typeof name === 'undefined') name = detectBot.find(agent)
+          if (typeof name === 'undefined') name = isbotMatch(agent)
 
           return name || undefined
         }
